@@ -1,2 +1,2 @@
-# web-components
+# Web Components Repository
 Web Components Projects
