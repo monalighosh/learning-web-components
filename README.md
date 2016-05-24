@@ -1,2 +1,2 @@
-# learning-web-components
+# web-components
 Web Components Projects
