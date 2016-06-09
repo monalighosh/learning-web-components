@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Appointment Scheduling Form</title>
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+
+<body id="form-appointment">
+<!-- Form 7 - Appointment starts here -->
+
+  <div class="box form-appointment">
+	<form id="appointment" action="" method="post">
+    <h2>Request an Appointment</h2> 
+      <label for="date">Preferred Date</label>    
+      <input name="date" type="date" min="2016-05-01" max="2017-12-31" required>
+      <label for="time">Preferred Time</label>
+      <input name="time" type="time" required>
+      <label for="timezone">Your Timezone</label>
+      <input name="timezone" type="text" required>
+      <label for="tel">Tel No.</label>
+      <input name="tel" type="tel" required>
+      <label for="email">Email</label>
+      <input name="email" type="email" required>
+      <label for="message">Message</label>
+      <textarea name="message" cols="30" rows="3"></textarea>
+      <button name="reset" type="reset" id="appointment-reset">Reset</button>
+      <button name="submit" type="submit" id="appointment-submit">Submit</button>
+  </form>
+  </div>
+
+<!-- Form 7 - Appointment ends here -->
+
+<!--footer navigation-->
+    <div id="footernav">
+     <a href="forms-index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    </div>
+<!--end footer navigation-->
+</body>
+</html>
