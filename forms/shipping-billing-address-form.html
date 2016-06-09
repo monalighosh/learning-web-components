@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipping and Billing Address Form</title>
+	<link rel="stylesheet" type="text/css" href="css/forms.css">
+</head>
+
+<body id="form-address">
+<!-- Form 6 - Shipping address starts here -->
+
+<div class="address-container">
+   <h1>Customer Information</h1>
+
+<div class="address-row">
+<form id="form-address" action="" method="post">
+
+<div class="form-address-col-left">
+  <h2>Shipping Information:</h2>
+      <label for="firstname">First Name</label>    
+      <input name="firstname" type="text" required>
+      <label for="lastname">Last Name</label>
+       <input name="lastname" type="text" required>
+      <label for="address">Address</label>
+      <textarea name="address" cols="20" rows="3"></textarea>
+      <label for="city">City</label>
+      <input name="city" type="text" required>
+      <label for="country">Country</label>
+      <input name="country" type="text" required>    
+</div>
+
+<div class="form-address-col-right">
+  <h2>Billing Information:</h2>
+      <label for="firstname">First Name</label>    
+      <input name="firstname" type="text" required>
+      <label for="lastname">Last Name</label>
+       <input name="lastname" type="text" required>
+      <label for="address">Address</label>
+      <textarea name="address" cols="20" rows="3"></textarea>
+      <label for="city">City</label>
+      <input name="city" type="text" required>
+      <label for="country">Country</label>
+      <input name="country" type="text" required>    
+</div>
+<div class="chkbox">
+<input type="checkbox" name="address" value="address-diff">
+<label for="address">My Shipping information is the same as my billing information.</label>
+</div>
+ <button name="submit" type="submit" id="address-submit">Submit</button>
+</form>
+</div>
+
+</div>
+
+<!-- Form 6 - Shipping address ends here -->
+
+<!--footer navigation-->
+    <div id="footernav">
+     <a href="forms-index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    </div>
+<!--end footer navigation-->
+</body>
+</html>
