@@ -1,0 +1,275 @@
+  /* For fonts */
+  @import url(font-awesome.min.css);
+  @import url("https://fonts.googleapis.com/css?family=Yantramanav");
+
+  /* Basic styling */
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+  body { 
+    padding:0; 
+    margin:0; 
+    font: 19px 'Yantramanav', sans-serif; 
+    font-weight: 500;
+    letter-spacing: 0.3px; 
+
+  }
+  
+  h3 {
+		font-size: 22px;
+		line-height: 50px;
+		font-weight: 300;
+	}
+
+  .container{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    cursor: pointer; 
+  }
+ 
+  .container div {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 15px;
+  }
+
+/* ================================================================ */
+/* Common button styles -------------------------------------- */
+/* ================================================================ */
+  
+  .button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+/* ================================================================ */
+/* Buy button styles -------------------------------------- */
+/* ================================================================ */
+
+  .button-buy {
+  color: #7a5b00;
+  text-shadow: 1px 1px rgba(0,0,0,0.1);
+  margin-right: 5px;
+  background: #ffd559; 
+  background: -webkit-linear-gradient(#ffd559, #e3aa03); 
+  background: linear-gradient(#ffd559, #e3aa03); 
+  overflow:hidden
+  border: 2px solid #e0b023;
+  box-shadow: 0 4px 6px 0 rgba(68,68,68,0.6);
+  transition: all 0.5s ease;
+  }
+
+  /* .button-buy:before {
+  content: "\00BB"
+  } */
+
+ .button-buy:hover {
+  background:#7a5b00; 
+  color: #ffd559;
+  box-shadow: inset 0 0 10px 3px rgba(68,68,68,0.6);
+  }
+
+  .button-buy:active {
+  background: -webkit-linear-gradient(#e3aa03, #ffd559); 
+  background: linear-gradient(#e3aa03, #ffd559); 
+  box-shadow: inset 0 0 15px rgba(68,68,68,0.4);
+  }
+
+.icon {
+  padding-right: 15px;
+}
+
+/* ================================================================ */
+/* Send mail button styles -------------------------------------- */
+/* ================================================================ */
+
+button {
+  font: 19px 'Yantramanav', sans-serif; 
+  font-weight: 500; 
+  width: 175px; 
+  color: #FFFFFF; 
+  border: 0 solid #fa6a1d;
+  border-radius: 7px; 
+  box-shadow: 0 3px 2px 0 rgba(137,74,118,0.9);
+  background: linear-gradient(to left, #da98c6, #cd69af); 
+  background-color: #d34e18; 
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.mailText button {
+  height: 45px; 
+  overflow: hidden;
+}
+
+.button-mail span { 
+  display: block; 
+  position: relative; 
+  transition: all 0.35s ease;
+}
+
+.button-mail .after {
+  right: -110px; 
+  top: -14px; 
+  z-index: 9;
+}
+
+.button-mail .before {
+  left: 0;
+  top: 11px; 
+}
+
+.button-mail:hover .before {
+  left: 180px;
+}
+
+.button-mail:hover .after { 
+  right: 0;
+}
+
+.button-mail:hover {
+  background: #0082d2; 
+  background: linear-gradient(to right, #da98c6, #cd69af); 
+  transition: all 0.4s ease;
+}
+
+/* ================================================================ */
+/* Search button styles -------------------------------------- */
+/* ================================================================ */
+
+.button-search {
+ display: inline-block;
+ width: 180px;
+ line-height: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #00b7bd;
+  border: 2px solid #00939b;
+  transition: border-radius 0.4s ease;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-bottom: 15px;
+  }
+  
+
+.button-search span {
+  float: left;
+  display: inline-block;
+  width: 50px;
+  background-color: #00939b;
+ transition: border-radius 0.4s ease;
+}
+
+ .button-search:hover, .button-search:hover span {
+  border-radius: 40px;
+  }
+
+
+/* ================================================================ */
+/* Small button styles -------------------------------------- */
+/* ================================================================ */
+  
+  .button-sm {
+  color: #FFFFFF;
+  margin-right: 5px;
+  background-color: #49a7df;
+  border: 2px solid #3392cb;
+  box-shadow: inset 0 0 0 0 #FFF;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.6s ease;
+  }
+  
+  .button-sm:hover {
+  color: #49a7df;
+  box-shadow: inset 0 100px 0 0 #FFF; 
+  -webkit-transform: scale(0.9); 
+  -ms-transform    : scale(0.9); 
+  transform        : scale(0.9);
+  }
+  
+/* ================================================================ */
+/* Medium button styles -------------------------------------- */
+/* ================================================================ */
+  
+  .button-md {
+  color: #FFFFFF;
+  margin-right: 5px;
+  background-color: #3ac569;
+  border: 2px solid #29ad55;
+  box-shadow: inset 0 0 0 0 #FFF;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  }
+  
+  .button-md:hover {
+  color: #3ac569;
+  box-shadow: inset 0 100px 0 0 #FFF;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  }
+  
+  
+/* ================================================================ */
+/* Large button styles -------------------------------------- */
+/* ================================================================ */
+  
+  .button-lg {
+  color: #FFFFFF;
+  background-color: #ff7473;
+  border: 2px solid #e55352;
+  box-shadow: inset 0 0 0 0 #FFF;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  }
+  
+  .button-lg:hover {
+  color: #ff7473;
+  box-shadow: inset 0 100px 0 0 #FFF;   
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+  }
+
+/* ================================================================ */
+/* Footer styles -------------------------------------- */
+/* ================================================================ */
+
+#footernav 
+ {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #CCCCCC;
+  text-align: center;
+  box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
+}
+
+#footernav i {
+  padding-right: 10px;
+}
+
+#footernav a:link {
+  color: #454545;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+#footernav a:visited,
+#footernav a:active,
+#footernav a:hover {
+  color: #454545;
+  text-shadow: -3px 5px 5px rgba(0,0,0,0.5); 
+}
