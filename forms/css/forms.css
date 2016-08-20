@@ -143,8 +143,7 @@ max-width: 960px;
 }
 
 #signup input[type="text"],
-#signup input[type="email"],
-#signup input[type="number"],
+#signup input[type="date"],
 #signup input[type="password"] {
   width: 100%;
   border: 1px solid #ccc;
@@ -156,8 +155,7 @@ max-width: 960px;
 }
 
 #signup input[type="text"]:hover,
-#signup input[type="email"]:hover,
-#signup input[type="number"]:hover,
+#signup input[type="date"]:hover,
 #signup input[type="password"]:hover {
   border: 1px solid #FFFFFF;
   background-color: #ffb096;
@@ -179,6 +177,26 @@ max-width: 960px;
 box-shadow: 0 0 10px 3px rgba(255,255,255,0.6)
 }
 
+#signup input[type="text"]::-webkit-input-placeholder, 
+#signup input[type="password"]::-webkit-input-placeholder {
+color: #606060 !important;
+}
+ 
+#signup input[type="text"]:-moz-placeholder,
+#signup input[type="password"]:-moz-placeholder { /* Firefox 18- */
+color: #606060 !important;  
+}
+ 
+#signup input[type="text"]::-moz-placeholder,
+#signup input[type="password"]::-moz-placeholder {  /* Firefox 19+ */
+color: #606060 !important;  
+}
+ 
+#signup input[type="text"]:-ms-input-placeholder,
+#signup input[type="password"]:-ms-input-placeholder {  
+color: #606060 !important;  
+}
+
 /* Form 2 - Search */
 
 .form-search {
@@ -191,7 +209,7 @@ box-shadow: 0 0 10px 3px rgba(255,255,255,0.6)
   color: #cd473d;
 }
 
-#search input[type="text"] {
+#search input[type="search"] {
   width: 100%;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
@@ -203,25 +221,25 @@ box-shadow: 0 0 10px 3px rgba(255,255,255,0.6)
   color: #cd473d;
 }
 
-#search input[type="text"]::-webkit-input-placeholder {
+#search input[type="search"]::-webkit-input-placeholder {
 color: #cd473d !important;
 }
  
-#search input[type="text"]:-moz-placeholder { /* Firefox 18- */
+#search input[type="search"]:-moz-placeholder { /* Firefox 18- */
 color: #cd473d !important;  
 }
  
-#search input[type="text"]::-moz-placeholder {  /* Firefox 19+ */
+#search input[type="search"]::-moz-placeholder {  /* Firefox 19+ */
 color: #cd473d !important;  
 }
  
-#search input[type="text"]:-ms-input-placeholder {  
+#search input[type="search"]:-ms-input-placeholder {  
 color: #cd473d !important;  
 }
 
 
-#search input[type="text"]:focus,  
-#search input[type="text"]:hover {
+#search input[type="search"]:focus,  
+#search input[type="search"]:hover {
   background: #FFFFFF;
   border: 1px solid #cd473d;
 }
@@ -276,44 +294,20 @@ color: #cd473d !important;
 
 #questionnaire label {
    display: inline-block;
-    cursor: pointer;
-    position: relative;
     padding-left: 25px;
     margin-right: 15px;
     font-size: 15px;
     color: #449aa6;
-
 }
 
-#questionnaire input[type=radio] {
-    display: none;
+
+#questionnaire input[type="radio"] {
+    border:none;
+    width:auto;
+    height:auto;
 }
 
-#questionnaire label:before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-    position: absolute;
-    left: 0;
 
-    top: 4px;
-    background-color: #8cc7cf;
-    box-shadow: inset 2px 2px 3px 0 rgba(0,0,0,0.3);
-}
-
-#questionnaire label:before {
-    border-radius: 8px;
-}
-
-#questionnaire input[type=radio]:checked + label:before {
-    content: "\2022";
-    color: #FFFFFF;
-    font-size: 30px;
-    text-align: center;
-    line-height: 18px;
-}
 
 #questionnaire input[type="text"] {
   width: 60%;
@@ -441,6 +435,10 @@ color: #FFFFFF !important;
   color: #000000;
 }
 
+#colour label{
+    font-weight: bold;
+}
+
 #colour label[for=red] {
   color: #CC0000;
 }
@@ -550,11 +548,17 @@ color: #FFFFFF !important;
 width: 100%;
   border: none;
   border-radius: 20px;
-  background: rgba(167,147,60,0.2);
+  
   margin: 10px 0;
   padding: 4px;
   -webkit-transition: border-color 0.3s ease;
           transition: border-color 0.3s ease;
+}
+
+#colour input[type=text]{
+  width: 20%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* Form 6 - Address */
@@ -577,7 +581,7 @@ width: 100%;
   margin-bottom: 10px;
 } 
 
-.form-address-col-left {
+#form-address-col-left {
    float: left;
    width: 49%;
    margin: 3px 0;
@@ -586,7 +590,7 @@ width: 100%;
    background: rgba(255,255,255,0.4)
 }   
 
-.form-address-col-right {
+#form-address-col-right {
    float: right;
    width: 49%;
    margin-top: 3px;
@@ -614,6 +618,11 @@ width: 100%;
 .chkbox {
   padding: 10px;
   clear: both;
+}
+
+#form-address input[type="checkbox"]{
+  height: auto;
+  width: auto;
 }
 
 
@@ -657,7 +666,7 @@ width: 100%;
 #appointment input[type="email"],
 #appointment input[type="tel"], 
 #appointment input[type="date"], 
-#appointment input[type="time"],textarea {
+#appointment input[type="time"],select, textarea {
   width: 100%;
   border-width: 1px;
   border-color: #662e1b;
@@ -677,6 +686,19 @@ width: 100%;
 #appointment input[type="time"]:hover,
 #appointment textarea:hover {
   border: 1px solid #d0b893;
+}
+
+#appointment select {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 7px;
+  background: #eadbb1;
+  font: inherit;
+}
+
+#appointment select:hover {
+  background: #eadbb1;
+
 }
 
 #appointment textarea {

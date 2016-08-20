@@ -12,7 +12,7 @@
     <h2>Secure Payment Info</h2> 
 	<form id="card" action="" method="post" >
     <label for="cardType">Credit / Debit Card Type</label> 
-      <select name="cardTypes">
+      <select name="cardTypes" required>
         <option value="" disabled selected>Choose your card type</option>
         <option value="visa">Visa</option>
         <option value="mastercard">MasterCard</option>
@@ -20,11 +20,14 @@
         <option value="discover">Discover</option>
       </select> 
     <label for="name">Name (as it appears on your card)</label>   
-    <input name="name" type="text" required> 
+    <input name="name" type="text" required>
+
     <label for="cardNumber">Card Number</label>   
-    <input name="cardNumber" type="number" maxlength="19" required> 
+    <input name="cardNumber" type="text" required> 
+
     <label for="expirationDate">Expiration Date</label>   
     <input name="monYr" type="month" min="2016-01" max="2031-12" required> 
+
     <label for="blue">CVV Code<br/> (The CVV Code is the last three digits on the back of your card.)</label><br/>   
     <input name="cvv" type="number" maxlength="3" required> 
     <button name="submit" type="submit" id="card-submit">Pay Now</button>
@@ -38,5 +41,6 @@
      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
     </div>
 <!--end footer navigation-->
+<script src="js/credit-debit-card.js"></script>
 </body>
 </html>

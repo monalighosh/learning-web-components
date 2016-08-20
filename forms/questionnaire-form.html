@@ -13,7 +13,7 @@
     <h2>Questionnaire</h2>
     <h3>What is your favorite search engine?</h3>    
     <div>
-      <input type="radio" name="searchengine" id="google" value="google">
+      <input type="radio" name="searchengine" id="google" value="google" required>
       <label for="google">Google</label>
     </div> 
     <div>
@@ -37,9 +37,9 @@
       <label for="duck">DuckDuckGo</label>
     </div>
     <div>  
-      <input type="radio" name="searchengine" id="other" value="other"><label for="other">Other</label><input name="searchengine" type="text">
+      <input type="radio" name="searchengine" id="other" value="other"><label for="other">Other</label><input name="otherOption" id="otherOption" type="text">
     </div>  
-      <button name="submit" type="submit" id="contact-submit">Submit</button>
+      <button name="submit" type="submit" id="contact-submit" value="Submit">Submit</button>
   </form>
   </div>
 
@@ -50,5 +50,6 @@
      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
     </div>
 <!--end footer navigation-->
+<script src="js/questionnaire.js"></script>
 </body>
 </html>

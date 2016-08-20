@@ -12,8 +12,8 @@
   <div class="box form-search">
 	<form id="search" action="" method="post">
     <h2>Product Finder</h2>
-      <input name="search" type="text" placeholder="Search" required>
-      <select name="categories">
+      <input name="searchProducts" type="search" placeholder="Search" required aria-required="true" autofocus />
+      <select name="categories" required aria-required="true">
         <option value="" disabled selected>Choose a Category</option>
         <option value="women">Women</option>
         <option value="men">Men</option>
@@ -33,5 +33,6 @@
      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
     </div>
 <!--end footer navigation-->
+<script src="js/search.js"></script>
 </body>
 </html>

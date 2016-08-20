@@ -14,38 +14,46 @@
 <div class="address-row">
 <form id="form-address" action="" method="post">
 
-<div class="form-address-col-left">
+<div id="form-address-col-left">
   <h2>Shipping Information:</h2>
       <label for="firstname">First Name</label>    
       <input name="firstname" type="text" required>
       <label for="lastname">Last Name</label>
-       <input name="lastname" type="text" required>
-      <label for="address">Address</label>
-      <textarea name="address" cols="20" rows="3"></textarea>
+      <input name="lastname" type="text" required>
+      <label for="address-line-1">Address Line 1</label>
+      <input name="address-line-1" type="text" required>
+      <label for="address-line-2">Address Line 2</label>
+      <input name="address-line-2" type="text">
+      <label for="zip-code">Zip/Postal Code</label>
+      <input name="zip-code" type="text" required>
       <label for="city">City</label>
       <input name="city" type="text" required>
       <label for="country">Country</label>
       <input name="country" type="text" required>    
 </div>
 
-<div class="form-address-col-right">
+<div id="form-address-col-right">
   <h2>Billing Information:</h2>
       <label for="firstname">First Name</label>    
       <input name="firstname" type="text" required>
       <label for="lastname">Last Name</label>
-       <input name="lastname" type="text" required>
-      <label for="address">Address</label>
-      <textarea name="address" cols="20" rows="3"></textarea>
+      <input name="lastname" type="text" required>
+      <label for="address-line-1">Address Line 1</label>
+      <input name="address-line-1" type="text" required>
+      <label for="address-line-2">Address Line 2</label>
+      <input name="address-line-2" type="text">
+      <label for="zip-code">Zip/Postal Code</label>
+      <input name="zip-code" type="text" required>
       <label for="city">City</label>
       <input name="city" type="text" required>
       <label for="country">Country</label>
-      <input name="country" type="text" required>    
+      <input name="country" type="text" required>   
 </div>
 <div class="chkbox">
-<input type="checkbox" name="address" value="address-diff">
+<input type="checkbox" name="address" value="radioCheck()">
 <label for="address">My Shipping information is the same as my billing information.</label>
 </div>
- <button name="submit" type="submit" id="address-submit">Submit</button>
+ <button name="submit" type="submit" id="address-submit" >Submit</button>
 </form>
 </div>
 
@@ -58,5 +66,6 @@
      <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
     </div>
 <!--end footer navigation-->
+<script src="js/shipping-billing-address.js"></script>
 </body>
 </html>
