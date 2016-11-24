@@ -114,6 +114,12 @@ margin: 0 auto;
 max-width: 960px;
 }
 
+#ind-wrapper img {
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+  }
+
 .img-circle {
   border-radius: 10%;
     border: 5px solid #FFFFFF;
@@ -815,4 +821,86 @@ background: #b3c100;
 #footernav a:hover {
   color: #000000;
   text-shadow: -3px 5px 5px rgba(0,0,0,0.5); 
+}
+
+/* ================================================================ */
+/* Media Queries -------------------------------------- */
+/* ================================================================ */
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+  /* Form Index */
+
+  #ind-wrapper img {
+    max-width: 160px;
+  }
+
+  .img-circle {
+    margin: 27px;
+  }
+
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+  /* Form Index */
+
+  #ind-wrapper img {
+    max-width: 120px;
+  }
+
+  /* Form 6 - Address */
+
+  .address-row h2 {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 360px) and (orientation: portrait) {
+
+  /* Form Index */
+
+  #ind-wrapper img {
+    max-width: 100px;
+  }
+
+  .img-circle {
+    margin: 10px;
+  }
+
+  /* Form 3 - Questionnaire */
+
+  #questionnaire input[type="text"] {
+    width: 55%;
+  }
+
+  /* Form 5 - Colour Palette */
+
+  #colour h2 {
+    font-size: 25px;
+  }
+
+  /* Form 6 - Address */
+
+  .address-row h2 {
+    font-size: 18px;
+  }
+
+  #form-address-col-left,
+  #form-address-col-right {
+    float: none;
+    width: 100%;
+  }
+
+  #form-address-col-left {
+    margin-bottom: 15px;
+  }
+
+  /* Form 8 - Card Payment */
+
+  .form-card h2 {
+    font-size: 20px;
+  }
+
 }
